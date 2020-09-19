@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Edit post</title>
+    <link rel="stylesheet" th:href="@{/style.css}" type="text/css" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0m mininum-scale=1.0">
+</head>
+<body>
+    <header>
+        <h1>Simple Guestbook</h1>
+    </header>
+
+
+    <div class="box-container">
+        <div class="box box-max">
+            <p><strong><span th:text="${entry[id].message}"></span></strong></p>
+
+            <a class="box submit" href="#" th:href="@{/guestbook}"> Back to guestbook </a>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
